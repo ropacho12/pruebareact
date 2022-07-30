@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './componentes/Navbar/Navbar'
+import '../src/css/estilos.css'
+import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
+// import Cartwidget from './componentes/CartWidget/Cartwidget';
+import Productos from './componentes/Productos/producto';
+import React, {useState} from 'react';
+import React from './componentes/Contador/Contador';
 
 function App() {
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <Navbar />
+      
+      <ItemListContainer saludos = "Leo Messi "/>
+      <Productos/>
+      <Contador />
+      
     </div>
   );
 }
