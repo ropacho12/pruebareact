@@ -1,14 +1,16 @@
- import React, {useState} from 'react';
+import React from 'react'
+import './Contador.css'
 
-function Contador(){
-    const [Contador, setContador] = useState (1);
-
-    return (
-        <div className="text-center mt-4">
-            <h1>contador</h1>
-            <p>{Contador}</p>
-
-        </div>
-    )
+const Contador = () => {
+  return (
+    <div className="counter-conteiner">
+        <div className='counter-p'>
+          <button>-</button>
+          <span>1</span>
+          <button>+</button>
+        </div>  
+    </div>
+  )
 }
+
 export default Contador

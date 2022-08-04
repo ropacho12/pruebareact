@@ -4,8 +4,8 @@ import '../src/css/estilos.css'
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
 // import Cartwidget from './componentes/CartWidget/Cartwidget';
 import Productos from './componentes/Productos/producto';
-import React, {useState} from 'react';
-import React from './componentes/Contador/Contador';
+
+import Contador from './componentes/Contador/Contador';
 
 function App() {
   return (
