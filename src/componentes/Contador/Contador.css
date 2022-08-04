@@ -1,8 +1,18 @@
 .counter-conteiner{
-    background-color: chocolate;
+    background-color: rgba(148, 147, 146, 0.76);
     width: 100px;
     height: 100px;
     margin: auto;
-  
     
+}
+.counter-p{
+  background-color:rgb(63, 144, 242);
+  margin: auto;
+  
+  
+}
+button {
+    
+    margin: 8px;
+  
 }
