@@ -3,11 +3,16 @@ import Navbar from './componentes/Navbar/Navbar'
 import '../src/css/estilos.css'
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
 // import Cartwidget from './componentes/CartWidget/Cartwidget';
-import Productos from './componentes/Productos/producto';
+
 
 import Contador from './componentes/Contador/Contador';
 
 function App() {
+  const total = (Cantidad)=> {
+    console.log (`Compraste ${Cantidad}`)
+  }
+
+
   return (
     
     <div className="App">
@@ -15,8 +20,8 @@ function App() {
       <Navbar />
       
       <ItemListContainer saludos = "Leo Messi "/>
-      <Productos/>
-      <Contador />
+     
+      <Contador Stock={10} onAdd ={total}/>
       
     </div>
   );

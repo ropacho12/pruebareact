@@ -1,0 +1,30 @@
+
+const Productos =
+[
+  { id: 1,
+    stock:10,
+    name: "Argentina",
+    img: "https://http2.mlstatic.com/D_NQ_NP_946006-MLA50543725241_072022-W.jpg",
+  },
+  {
+    id: 2,
+    stock:20,
+    name: "Barcelona",
+    img: "https://assets.adidas.com/images/w_600,f_auto,q_auto/d88ae2138faf49be8f74aeca012c62eb_9366/Camiseta_Titular_Argentina_22_Messi_Blanco_HL8425_01_laydown.jpghttps://assets.adidas.com/images/w_600,f_auto,q_auto/d88ae2138faf49be8f74aeca012c62eb_9366/Camiseta_Titular_Argentina_22_Messi_Blanco_HL8425_01_laydown.jpg",
+  },
+  {
+    id: 3,
+    stock:30,
+    name: "Psg",
+    img: "https://assets.adidas.com/images/w_600,f_auto,q_auto/d88ae2138faf49be8f74aeca012c62eb_9366/Camiseta_Titular_Argentina_22_Messi_Blanco_HL8425_01_laydown.jpg",
+  },
+]
+
+export const galeria = () =>{
+    return new Promise ((resolve) =>{
+        setTimeout (()=> {
+            resolve (Productos)
+        }, 3000)
+
+    })
+}
