@@ -1,8 +1,12 @@
 import React from 'react'
 
-const Item = ({Productos}) => {
+const Item = ({Productos,}) => {
   return (
-    <li>{Productos.name}</li>
+    <li>
+        <h3>{Productos.name}</h3>
+        <img src={Productos.img} alt={Productos.name}/>
+        
+    </li>
   )
 }
 
