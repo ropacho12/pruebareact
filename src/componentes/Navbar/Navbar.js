@@ -8,13 +8,13 @@ const navbar = () => {
         <h1>Tshirts</h1>
         <ul className="nav justify-content-end">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a className="nav-link active" aria-current="page" >Inicio</a>
             </li>
            <li className="nav-item">
-              <a className="nav-link" href="#">Productos</a>
+              <a className="nav-link" >Productos</a>
            </li>
            <li className="nav-item">
-             <a className="nav-link" href="#">Contactanos</a>
+             <a className="nav-link" >Contactanos</a>
            </li>
            <Cartwidget/>
         </ul>

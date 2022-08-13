@@ -28,3 +28,12 @@ export const galeria = () =>{
 
     })
 }
+
+export const getGaleriaById = (id) =>{
+  return new Promise ((resolve) =>{
+      setTimeout (()=> {
+          resolve (Productos.find(prod => prod.id === id))
+      }, 3000)
+
+  })
+}
