@@ -9,12 +9,14 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 import Contador from './componentes/Contador/Contador';
 
+
+
 function App() {
   const total = (Cantidad)=> {
-    console.log (`Compraste ${Cantidad}`)
-  }
+    console.log (`Compraste ${Cantidad}`)}
 
 
+  
   return (
     
     <div className="App">
@@ -22,9 +24,8 @@ function App() {
       <BrowserRouter>
            <Navbar />
           <Routes>
-             <Route path='/' element={<ItemListContainer saludos = "Leo Messi "/>}/>
+             <Route path='/' element={<ItemListContainer saludos = "TODOS los productos. "/>}/>
              <Route path='/detail/:productId' element={<ItemDetailContainer/>}/>
-             
              
           </Routes>
            <Button/>
@@ -34,6 +35,6 @@ function App() {
       
     </div>
   );
-}
 
+}
 export default App;

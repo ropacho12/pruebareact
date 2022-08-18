@@ -23,7 +23,7 @@ const ItemDetailContainer = () =>{
 
     return (
         <div>
-            <h1> detalle</h1>
+            <h1> detalle Argentina</h1>
             <ItemDetail {...data} />
         </div>
     )

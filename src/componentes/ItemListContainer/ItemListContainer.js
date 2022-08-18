@@ -2,7 +2,10 @@ import  './ItemListContainer.css'
 import {galeria } from '../../asyncMock'
 import ItemList from '../ItemList/ItemList'
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
+
+// ItemListContainer muestra UN SOLO producto
 const ItemListContainer = ({saludos}) => {
     const [Productos, setProductos] = useState ([])
 
@@ -19,10 +22,10 @@ const ItemListContainer = ({saludos}) => {
                <>
                  <h1>{saludos}</h1>
                    
-                      <ul>
-                      {Productos.map (prod => <li key={prod.id}>{prod.name}</li>)}
+                      <div style={{backgroundColor: 'red' }} >
+                      {Productos.map (prod => <Link to={`/detail${prod.id}`}   key={prod.id}>{prod.name}</Link>)}
 
-                      </ul>
+                      </div>
                   
         
                   <ItemList Productos={Productos}/>

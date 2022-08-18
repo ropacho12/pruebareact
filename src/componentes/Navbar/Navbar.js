@@ -1,5 +1,6 @@
 import React from 'react'
 import Cartwidget from '../CartWidget/Cartwidget'
+import {NavLink } from 'react-router-dom'
 
 const navbar = () => {
     return(
@@ -8,13 +9,13 @@ const navbar = () => {
         <h1>Tshirts</h1>
         <ul className="nav justify-content-end">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" >Inicio</a>
+              <NavLink to={"/Argentina"} className="nav-link active" aria-current="page" >Argentina</NavLink>
             </li>
            <li className="nav-item">
-              <a className="nav-link" >Productos</a>
+              <NavLink to={"/Barcelona"} className="nav-link" >Barcelona</NavLink>
            </li>
            <li className="nav-item">
-             <a className="nav-link" >Contactanos</a>
+             <NavLink to={"/Psg"} className="nav-link" >P.s.G</NavLink>
            </li>
            <Cartwidget/>
         </ul>
