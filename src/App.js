@@ -7,13 +7,13 @@ import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailCon
 import Button from './componentes/Button/Button';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
-import Contador from './componentes/Contador/Contador';
+// import Contador from './componentes/Contador/Contador';
 
 
 
 function App() {
-  const total = (Cantidad)=> {
-    console.log (`Compraste ${Cantidad}`)}
+  // const total = (Cantidad)=> {
+  //   console.log (`Compraste ${Cantidad}`)}
 
 
   
@@ -31,7 +31,8 @@ function App() {
            <Button/>
       </BrowserRouter>
      
-      <Contador Stock={10} onAdd ={total}/>
+      {/* <Contador Stock={10} onAdd ={total}/> */}
+      
       
     </div>
   );

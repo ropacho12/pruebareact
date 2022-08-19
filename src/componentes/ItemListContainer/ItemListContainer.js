@@ -2,7 +2,7 @@ import  './ItemListContainer.css'
 import {galeria } from '../../asyncMock'
 import ItemList from '../ItemList/ItemList'
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 
 // ItemListContainer muestra UN SOLO producto
@@ -22,10 +22,10 @@ const ItemListContainer = ({saludos}) => {
                <>
                  <h1>{saludos}</h1>
                    
-                      <div style={{backgroundColor: 'red' }} >
+                      {/* <div style={{backgroundColor: 'red' }} >
                       {Productos.map (prod => <Link to={`/detail${prod.id}`}   key={prod.id}>{prod.name}</Link>)}
 
-                      </div>
+                      </div> */}
                   
         
                   <ItemList Productos={Productos}/>
