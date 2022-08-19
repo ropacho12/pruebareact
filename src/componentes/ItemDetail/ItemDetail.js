@@ -1,7 +1,7 @@
 // import Item from "../Item/I
 import React from 'react';
 import Contador from '../Contador/Contador';
-
+import Button from '../Button/Button';
 
 const ItemDetail = ({name, categoria}) =>{
     
@@ -13,11 +13,12 @@ const ItemDetail = ({name, categoria}) =>{
         <div>
             <h1>{name}</h1>
             
-            <h4>{categoria}</h4>
+            <img/>
 
 
 
             <Contador Stock={10} onAdd ={total}/>
+            <Button/>
         </div>
      
       

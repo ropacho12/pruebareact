@@ -4,7 +4,7 @@ import '../src/css/estilos.css'
  import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
 // import Cartwidget from './componentes/CartWidget/Cartwidget';
 import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailContainer';
-import Button from './componentes/Button/Button';
+
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 // import Contador from './componentes/Contador/Contador';
@@ -28,7 +28,7 @@ function App() {
              <Route path='/detail/:productId' element={<ItemDetailContainer/>}/>
              
           </Routes>
-           <Button/>
+          
       </BrowserRouter>
      
       {/* <Contador Stock={10} onAdd ={total}/> */}
